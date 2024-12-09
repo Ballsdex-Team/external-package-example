@@ -1,0 +1,16 @@
+[project]
+name = "example_package"
+version = "0.0.1"
+authors = ["laggron42 <laggron42@gmail.com>"]
+description = "An example extra package for Ballsdex"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
