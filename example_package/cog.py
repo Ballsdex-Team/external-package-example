@@ -27,7 +27,7 @@ class ExampleCog(commands.Cog):
             await interaction.response.send_message("You are not a registered player.")
             return
 
-        if not await player.balls.exists():
+        if not await player.balls.all().exists():
             await interaction.response.send_message("You do not have any countryball yet.")
             return
 
