@@ -33,7 +33,7 @@ class ExampleCog(commands.Cog):
 
         await interaction.response.defer(thinking=True)
         pk = random.choice(await player.balls.all().values_list("id"))
-        ball = await BallInstance.get(pk=pk)
+        ball = await BallInstance.get(pk=pk[0])
         text, file = await ball.prepare_for_message(interaction)
         await interaction.followup.send(text, file=file)
 
