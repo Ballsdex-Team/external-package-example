@@ -10,9 +10,11 @@ inventory.
 
 ## How to install
 
-There are multiple ways to install an external package depending on your
-configuration. I am aware this installation process is not easy, and
-I'm open for suggestions on how to do it better.
+> [!IMPORTANT]
+> There are multiple ways to install an external package depending on your
+> configuration. I am aware this installation process is not easy, and
+> I'm working on a better solution. However, **this won't affect
+> existing repositories, you can safely follow this example**.
 
 ### If you're using Docker
 
@@ -87,5 +89,5 @@ the recommended way of Ballsdex, here's the process:
 
 That's it! Remember to change the `name` in `pyproject.toml` to the name of your main folder.
 
-[!WARNING]
+> [!WARNING]
 > If you change some code, you should change the version number in `pyproject.toml`, otherwise pip won't notice a change in code.
